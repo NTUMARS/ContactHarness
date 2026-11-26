@@ -1,0 +1,30 @@
+/* Reading hierarchy below the fixed dark cover. Preserve sizes and chart colors. */
+body.edition-two main section:not(#overview) :is(p,dt,dd,figcaption,td,small,.agent-log-content,.agent-log-type,.chart-axis-title,.chart-ticks,.result-display-note,.selected-trial-note,.multiple-count,.multiple-status){font-weight:500}
+body.edition-two main section:not(#overview) :is(button,select,label,th,.column-label,.column-value,.legend-group-title,.trained-label,.task-caption h3,.real-result-task h4,.benchmark-task h3){font-weight:600}
+body.edition-two main section:not(#overview) :is(button small,.agent-log-row time,.agent-log-header time){font-weight:500}
+body.edition-two main section:not(#overview) :is(h3,h4){font-weight:650}
+body.edition-two .hero-introduction .idea-summary{font-weight:500}
+html[data-theme=dark] body.edition-two main section:not(#overview){--ink:#f0f4fc;--muted:#cfdaec}
+html[data-theme=dark] body.edition-two main section:not(#overview) :is(p,dt,figcaption,.chart-context,.chart-footnote,.chart-axis-title,.chart-ticks,.chart-ticks span,.column-label,.column-value,.legend-group-title,.trained-label,.real-group-heading>span,.result-display-note,.selected-trial-note,.benchmark-foot,.benchmark-group-label,.table-notes,.multiple-count,.multiple-tile figcaption,.multiple-status,.multiple-controls label,.playback-speed label){color:#d3def0}
+html[data-theme=dark] body.edition-two main section:not(#overview) :is(h3,h4,h5,.benchmark-task h3,.task-caption h3){color:#f0f4fc}
+html[data-theme=dark] body.edition-two main section:not(#overview) :is(.result-number small,.panel-heading>span,.real-results-group>p,.real-table-scroll thead th,.real-result-task dt,.real-result-task dd,.research-table td,.research-table th,.log-availability-key,.method-key span,.agent-log-content,.agent-log-type,.agent-log-row time,.agent-log-header time){color:#d3def0}
+html[data-theme=dark] body.edition-two main section:not(#overview) :is(.real-table-scroll th,.real-table-scroll td,.research-table tbody th,.benchmark-task h3){color:#e4ecfa}
+html[data-theme=dark] body.edition-two main section:not(#overview) :is(.connector-success,.task-success strong,.real-results-note a,.trial-evidence-link,.column-bar.ours .column-value){color:#bdd5ff}
+html[data-theme=dark] body.edition-two main #real-experiments :is(#task-menu button,#task-menu button small,.task-caption p,.agent-log-content,.agent-log-type,.agent-log-row time,.agent-log-header time){color:#d3def0}
+html[data-theme=dark] body.edition-two main #real-experiments #task-menu button.selected{color:#c3dbff}
+html[data-theme=dark] body.edition-two main #real-experiments .agent-log-row.current .agent-log-content{color:#fff}
+html[data-theme=dark] body.edition-two main #experiments #sim-task-menu button{color:#dce6f7}
+html[data-theme=dark] body.edition-two main #experiments #sim-task-menu button.selected{color:#c3dbff}
+html[data-theme=dark] body.edition-two main #benchmark :is(.benchmark-subtitle,.benchmark-protocol,.benchmark-group-label){color:#d3def0}
+html[data-theme=dark] body.edition-two main #results :is(.real-result-task dd,#sim-results-tasks figcaption){color:#dce6f7}
+html[data-theme=dark] body.edition-two main #abstract p,
+html[data-theme=dark] body.edition-two .hero-introduction .idea-summary{color:#d3def0}
+/* Raised controls retain dark ink on their light selected fill. */
+html[data-theme=dark] body.edition-two main section:not(#overview) :is(.platform-tabs button:not(.selected),.trial-mode-switch button:not([aria-pressed=true]),.chart-mode button:not([aria-pressed=true]),.chart-metrics button:not([aria-pressed=true]),.chart-layout button,.method-key,.log-read-toggle,.methods-disclosure,.multiple-controls select,.multiple-controls button:not(.multiple-play),.playback-speed select,.sim-controls select,.sim-controls button){color:#dce6f7}
+html[data-theme=dark] body.edition-two main #real-experiments .connector-picker button:not(.selected){color:#dce6f7}
+html[data-theme=dark] body.edition-two main #demo-section :is(.demo-versions button:not([aria-pressed=true]),.overview-chapters button,.overview-chapters>span){color:#dce6f7}
+html[data-theme=dark] body.edition-two main section:not(#overview) .evidence-note{background:#34465e;color:#dce6f7;border-color:#778ba7}
+/* The table and chart annotations follow the same weight as the page labels. */
+html[data-theme=dark] body.edition-two main section:not(#overview) .chart-tooltip{color:#f0f4fc}
+html[data-theme=dark] body.edition-two main section:not(#overview) .difficulty-group a{color:#d3def0;font-weight:500}
+html[data-theme=dark] body.edition-two footer :is(p,span,a){color:#d3def0;font-weight:500}

@@ -1,0 +1,81 @@
+.results-chart-card{margin:0 0 48px;border:1px solid #dce2ed;border-radius:20px;padding:30px;background:#fff;min-width:0;box-shadow:0 8px 28px #22396b06}
+.chart-heading{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.chart-heading h3{font-size:26px;font-weight:600;letter-spacing:-.035em;margin:0}
+.chart-context{font-size:14px;line-height:1.6;color:#74747e;margin:10px 0 26px}
+.chart-mode{display:flex;gap:2px;border:1px solid #d9dae0;border-radius:9px;padding:3px;flex-shrink:0}
+.results-chart-card button{font:inherit;font-size:14px;cursor:pointer;color:#62626d;background:#fff;border:0;padding:8px 12px;border-radius:6px;line-height:1.35}
+.chart-mode button[aria-pressed=true]{background:#242731;color:#fff}
+.chart-panel{position:relative}
+.chart-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.chart-metrics{display:flex;gap:8px;flex-wrap:wrap}
+.chart-metrics button{border:1px solid #dce2ed;padding:9px 14px;border-radius:8px;color:#4e607b}
+.chart-metrics button[aria-pressed=true]{background:#527fbd;border-color:#527fbd;color:#fff}
+.chart-grouping{display:flex;gap:12px}
+.chart-grouping button{padding:7px 0;border-radius:0;border-bottom:2px solid transparent;color:#73737e}
+.chart-grouping button[aria-pressed=true]{border-color:#527fbd;color:#315f99}
+.chart-legend{display:flex;flex-wrap:wrap;gap:8px 10px;padding:0 0 22px;border-bottom:1px solid #e7eaf2}
+.results-chart-card .method-key{display:flex;align-items:center;gap:7px;border:1px solid #e7eaf0;padding:6px 9px;font-size:12px;color:#777785;border-radius:7px;white-space:nowrap;transition:border-color .18s,color .18s}
+.results-chart-card .method-key[aria-pressed=true]{border-color:var(--series-color);color:#303544}
+.key-swatch{width:8px;height:8px;border:1px solid #c7cbd5;border-radius:2px;flex-shrink:0}
+.method-key[aria-pressed=true] .key-swatch{border-color:var(--series-color);background:var(--series-color)}
+.trained-label{font-size:11px;line-height:1.3;color:#9b6d27;font-weight:500;letter-spacing:0}
+.column-label>.trained-label{display:block;margin-top:4px}
+.chart-scroll{overflow:auto;outline-offset:4px;margin-top:24px;scrollbar-width:thin;padding-bottom:5px}
+.column-chart{position:relative;min-width:var(--plot-min);padding:40px 0 0 36px}
+.chart-axis-title{position:absolute;top:0;left:0;color:#67758c;font-size:13px}
+.chart-ticks{position:absolute;top:40px;left:0;height:250px;width:26px;display:flex;flex-direction:column;justify-content:space-between;text-align:right;color:#8a94a7;font-size:11px;line-height:1}
+.chart-ticks span{transform:translateY(-50%)}
+.chart-ticks span:last-child{transform:translateY(50%)}
+.chart-columns{display:grid;grid-template-columns:repeat(var(--columns),minmax(0,1fr));gap:22px;position:relative}
+.chart-columns:before{content:'';position:absolute;top:0;left:0;right:0;height:250px;border-bottom:1px solid #d3dce9;background-image:radial-gradient(#dfe5ef .7px,transparent .8px);background-size:12px 12px;pointer-events:none}
+.chart-column{min-width:0;position:relative}
+.column-well{height:250px;display:flex;align-items:flex-end;justify-content:center;gap:6px;padding-inline:3px}
+.bar-slot{height:100%;flex:1;min-width:0;max-width:56px;display:flex;align-items:flex-end}
+.results-chart-card .column-bar{width:100%;min-height:2px;position:relative;border-radius:4px 4px 0 0;border:0;background:var(--series-color);padding:0;flex-shrink:0;transition:filter .18s;outline-offset:3px}
+.column-bar:hover,.column-bar:focus-visible{filter:brightness(1.09)}
+.column-value{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);padding-bottom:8px;color:#516079;font-size:12px;font-weight:500;white-space:nowrap;font-variant-numeric:tabular-nums;pointer-events:none}
+.is-ours .column-value{color:#315f99;font-weight:650}
+.column-label{text-align:center;font-size:14px;line-height:1.45;padding-top:17px;min-height:48px;color:#364660;font-weight:500;overflow-wrap:break-word}
+.chart-footnote{font-size:13px;line-height:1.7;color:#747e90;margin:18px 0 0}
+.chart-tooltip{position:absolute;z-index:5;pointer-events:none;background:#fff;color:#303849;border:1px solid #dfe5ef;border-top:3px solid var(--series-color);border-radius:10px;padding:12px 16px;box-shadow:0 8px 30px #253b6322;font-size:13px;max-width:min(290px,100%)}
+.chart-tooltip strong,.chart-tooltip span,.chart-tooltip small{display:block}.chart-tooltip span{margin-top:6px}.chart-tooltip small{color:#9b6d27;margin-top:5px}
+.results-chart-card [hidden]{display:none!important}
+.results-chart-card .data-table-scroll{border:0;border-radius:0;margin-top:24px}
+.results-chart-card .research-table{min-width:960px}
+.chart-entered .column-bar{animation:column-grow .65s cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--delay)}
+@keyframes column-grow{from{height:0}}
+@media(prefers-reduced-motion:reduce){.chart-entered .column-bar{animation:none}}
+@media(max-width:600px){.results-chart-card{padding:20px 14px;border-radius:15px}.chart-heading{gap:12px;align-items:flex-start}.chart-heading h3{font-size:22px}.chart-mode button{padding:7px 8px}.chart-toolbar{gap:14px}.chart-metrics{gap:6px}.chart-metrics button{padding:8px 10px;font-size:13px}.chart-legend{gap:6px}.results-chart-card .method-key{white-space:normal;text-align:left}.chart-context{margin-bottom:22px}.chart-columns{gap:18px}}
+@media(max-width:600px){.chart-legend.many-methods{display:grid;grid-template-rows:repeat(3,max-content);grid-auto-flow:column;grid-auto-columns:max-content;overflow-x:auto;scrollbar-width:thin;padding-bottom:16px}.chart-legend.many-methods .method-key{white-space:nowrap}}
+/* Separate legend groups; use the manuscript-derived accent for each chart. */
+.chart-legend,.chart-legend.many-methods{display:flex;flex-direction:column;flex-wrap:nowrap;gap:18px;overflow:visible}
+.legend-group{display:flex;flex-direction:column;gap:9px;min-width:0;width:100%;max-width:100%}
+.legend-group-title{font-size:12px;font-weight:550;letter-spacing:0;color:#586278}
+.legend-keys{display:flex;flex-wrap:wrap;gap:8px 10px;min-width:0;max-width:100%}
+.chart-metrics button[aria-pressed=true]{background:var(--chart-accent);border-color:var(--chart-accent)}
+.chart-grouping button[aria-pressed=true]{border-color:var(--chart-accent);color:var(--chart-accent)}
+.is-ours .column-value{color:var(--chart-accent)}
+.ablation-chart .column-well{gap:14px}
+.ablation-chart .bar-slot{flex:0 0 18px;width:18px;max-width:18px}
+.ablation-chart .column-bar{border-radius:3px 3px 0 0}
+.results-chart-card .chart-metrics button[aria-pressed=true]{background:#edf2f8;border-color:#cfdbe9;color:#506d95}
+.results-chart-card .method-key[aria-pressed=true]{border-color:color-mix(in srgb,var(--series-color) 45%,white)}
+.results-chart-card .chart-tooltip{border-top-width:2px;box-shadow:0 6px 22px #253b6312}
+.results-chart-card{--plot-height:130px}
+.chart-ticks,.chart-columns:before,.column-well{height:var(--plot-height)}
+.table-task-buttons{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.table-task-buttons button{border:1px solid #dce2ed;color:#596b84}
+.table-task-buttons button[aria-pressed=true]{background:#edf2f8;border-color:#cfdbe9;color:#506d95}
+.results-chart-card .compact-results-table{min-width:600px;table-layout:auto}
+.results-chart-card .compact-results-table th:first-child{min-width:230px}
+.results-chart-card .compact-results-table caption{font-size:16px;padding:12px 20px}
+.table-panel .data-table-scroll{margin-top:0}
+.results-chart-card .research-table caption{text-align:left;caption-side:top}
+@media(max-width:600px){.chart-legend.many-methods{display:flex;flex-direction:column;gap:16px}.chart-legend.many-methods .legend-keys{display:grid;grid-auto-flow:column;grid-template-rows:repeat(3,max-content);grid-auto-columns:max-content;overflow-x:auto;padding-bottom:8px;scrollbar-width:thin}.chart-legend.many-methods .legend-group:last-child .legend-keys{grid-template-rows:repeat(2,max-content)}}
+
+/* Axis title occupies a separate row above the value-label clearance. */
+.column-chart{padding-top:60px;padding-left:44px}
+.chart-axis-title{position:static;margin:0 0 38px -44px;line-height:20px}
+.column-chart{padding-top:0}
+.chart-ticks{top:58px;width:32px}
+.column-value{padding-bottom:6px}

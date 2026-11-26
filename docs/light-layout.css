@@ -1,0 +1,55 @@
+/* White content sections, with real experiments before simulation. */
+.home-page main>.screen:not(.hero),.detail-page main>.screen{background:#fff!important;color:#222226}
+body.edition-two main>section.screen:not(#overview){background:#fff!important;color:#222226}
+#real-experiments{--ink:#222226;--muted:#6e6e76;--rule:#dddde3;--pale:#f5f5f7}
+#real-experiments .section-heading h2,#real-experiments .task-caption h3{color:#222226}
+#real-experiments .platform-tabs{background:#fff;border:1px solid #dcdce2;padding:3px}
+#real-experiments .platform-tabs button{color:#61616b}
+#real-experiments .platform-tabs button.selected{background:#29292e;color:#fff}
+#real-experiments #task-menu button{color:#62626c;background:none}
+#real-experiments #task-menu button small{color:#7a7a84}
+#real-experiments #task-menu button:hover{background:#f7f7f9;color:#222226}
+#real-experiments #task-menu button.selected{background:#fff;color:#315f99;box-shadow:inset 2px 0 #537fbb;border-radius:0}
+#real-experiments #task-menu button.selected small{color:#62626c}
+#real-experiments .connector-picker button{background:#fff;color:#55555f;border-color:#d0d0d8}
+#real-experiments .connector-picker button.selected{background:#29292e;color:#fff;border-color:#29292e}
+#real-experiments .task-caption p,#real-experiments .playback-speed{color:#6e6e76}
+#real-experiments select{background:#fff;color:#29292e;border-color:#c8c8d0;color-scheme:light}
+#real-experiments .agent-log{background:#fff;border:1px solid #e1e1e7;border-radius:9px}
+#real-experiments .agent-log-header{border-bottom-color:#e6e6eb}
+#real-experiments .agent-log-header h3{color:#29292e}
+#real-experiments .agent-log-header time,#real-experiments .agent-log-row time{color:#74747e}
+#real-experiments .agent-log-row,#real-experiments .agent-log-content{color:#383840}
+#real-experiments .agent-log-type{color:#6e6e78}
+#real-experiments .agent-log-row[data-kind=shell] .agent-log-type{color:#89672c}
+#real-experiments .agent-log-row[data-kind=output] .agent-log-type{color:#6e6e78}
+#real-experiments .agent-log-row[data-kind=agent] .agent-log-type{color:#8060a6}
+#real-experiments .agent-log-row.current{background:#f7f5fa;border-left-color:#9a7acb}
+#real-experiments #agent-log-feed{scrollbar-color:#bcbcc6 #fff}
+#connector-collection .connector-tile{background:#fff;box-shadow:none}
+#connector-collection .connector-tile:hover{background:#fafafa}
+#experiments .sim-controls{background:#fff;border:1px solid #e1e1e7}
+#full-results-section{background:#fff!important;padding:48px 32px 64px;border-bottom:0!important}
+#full-results-section .full-results{margin:0;padding:0}
+#full-results-section .full-results>h3{font-size:30px;letter-spacing:-.04em;font-weight:600;margin-bottom:32px}
+.data-table-scroll{border:1px solid #e6e6ec}
+footer{background:#fff}
+/* Frame each experiment browser, without framing individual camera views. */
+:is(.home-page,.detail-page) #real-experiments .task-explorer,
+:is(.home-page,.detail-page) #experiments .simulation-explorer{max-width:960px;margin-inline:auto;border:1px solid #d9dae1;border-radius:18px;padding:28px;background:#fff;box-shadow:0 3px 16px #22222604}
+@media(max-width:600px){:is(.home-page,.detail-page) #real-experiments .task-explorer,:is(.home-page,.detail-page) #experiments .simulation-explorer{padding:16px 12px;border-radius:13px}}
+@media(max-width:800px){#full-results-section{padding:40px 24px 48px}#full-results-section .full-results>h3{font-size:26px}}
+@media(max-width:480px){#full-results-section{padding-inline:20px}}
+/* White surfaces, with chapter hierarchy carried by spacing and paper accents. */
+:is(.home-page,.detail-page) #real-experiments .task-explorer,
+:is(.home-page,.detail-page) #experiments .simulation-explorer{border-color:#dce2ed;box-shadow:0 8px 28px #22396b06;border-radius:20px}
+#real-experiments .section-heading h2,#experiments .section-heading h2,#results>.wrap>.section-heading h2{padding-left:18px;border-left:3px solid #7192c6;line-height:1.2}
+#research-overview .wrap,#method .wrap,#experimental-overview .wrap{border:1px solid #e0dcee;border-radius:20px;padding:30px;background:#fff;box-shadow:0 8px 28px #55407505}
+#research-overview .section-heading h2,#method .section-heading h2,#experimental-overview .section-heading h2{color:#363043}
+#research-overview,#method,#experimental-overview{padding-block:28px}
+#research-overview{padding-top:64px}
+#experimental-overview{padding-bottom:64px}
+#results .connectors-panel,#results .simulation-panel{padding:24px;border:1px solid #dce2ed;border-radius:18px;box-shadow:0 8px 28px #22396b05;background:#fff;min-width:0}
+#results .panel-heading{border-bottom-color:#e7ecf4}
+#results .results-layout{gap:24px}
+@media(max-width:600px){#research-overview .wrap,#method .wrap,#experimental-overview .wrap{padding:22px 16px;border-radius:15px}#results .connectors-panel,#results .simulation-panel{padding:18px;border-radius:15px}#real-experiments .section-heading h2,#experiments .section-heading h2,#results>.wrap>.section-heading h2{padding-left:13px}}

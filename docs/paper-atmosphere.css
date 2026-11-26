@@ -1,0 +1,12 @@
+/* Continuous paper-colored atmosphere. Only the background layers move. */
+body.edition-two{position:relative;isolation:isolate;background:#fff}
+body.edition-two::before,body.edition-two::after{content:'';position:fixed;inset:-18%;z-index:-1;pointer-events:none;will-change:transform}
+body.edition-two::before{background:linear-gradient(108deg,#e0ecfa 0%,#edf1f7 25%,#fff7df 49%,#f9e7ed 73%,#e9e0f5 100%);animation:paper-drift 42s ease-in-out infinite alternate}
+body.edition-two::after{background:radial-gradient(ellipse at 20% 70%,#dcecfb99 0%,transparent 48%),radial-gradient(ellipse at 75% 38%,#f0e3f780 0%,transparent 50%),radial-gradient(ellipse at 48% 52%,#fffdf1b0 0%,transparent 45%);filter:blur(60px);animation:paper-breathe 57s ease-in-out infinite alternate}
+body.edition-two main>section.screen:not(#overview),body.edition-two #overview.hero{background:transparent!important;border-top-color:transparent!important;border-bottom-color:transparent!important}
+body.edition-two footer{background:transparent;border-top:0}
+/* Research surfaces remain opaque white to keep images and charts unaltered. */
+.results-chart-card,#research-overview .wrap,#method .wrap,#experimental-overview .wrap{background:#fff}
+@keyframes paper-drift{0%{transform:translate3d(-2%,-1%,0) scale(1.02) rotate(-1deg)}50%{transform:translate3d(1%,2%,0) scale(1.05) rotate(0deg)}100%{transform:translate3d(3%,-2%,0) scale(1.03) rotate(1deg)}}
+@keyframes paper-breathe{0%{transform:translate3d(3%,2%,0) scale(1)}50%{transform:translate3d(-2%,-3%,0) scale(1.08)}100%{transform:translate3d(-4%,2%,0) scale(1.02)}}
+@media(prefers-reduced-motion:reduce){body.edition-two::before,body.edition-two::after{animation:none;will-change:auto}}

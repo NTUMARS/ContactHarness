@@ -1,0 +1,30 @@
+# Static publication bundle. Do not add private records or credentials.
+raw_session_logs_PRIVATE_do_not_publish/
+private-video-backup/
+private-media-before-compression*/
+raw_review/
+*.private.json
+*-private.json
+*-private.zip
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+.ssh/
+credentials*.json
+secrets*.json
+*.local.json
+*.local.yaml
+*.local.yml
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+.DS_Store
+Thumbs.db
+# GitHub regular Git rejects files larger than 100 MiB.
+# These remain available locally. Arrange separate hosting before publishing;
+# ignoring a required video alone would leave the public player without media.

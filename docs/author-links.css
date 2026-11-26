@@ -1,0 +1,4 @@
+/* Author names remain part of the existing title composition. */
+html[data-theme] body.edition-two.home-page #overview .author-row .author-homepage{color:inherit;font:inherit;text-decoration:underline;text-decoration-color:#e1eaf940;text-decoration-thickness:1px;text-underline-offset:4px;transition:text-decoration-color .18s,color .18s;pointer-events:auto}
+html[data-theme] body.edition-two.home-page #overview .author-row .author-homepage:hover{color:#fff;text-decoration-color:currentColor}
+html[data-theme] body.edition-two.home-page #overview .author-row .author-homepage:focus-visible{outline:2px solid #bed6ff;outline-offset:5px;border-radius:2px;text-decoration-color:currentColor}

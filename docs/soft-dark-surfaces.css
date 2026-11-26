@@ -1,0 +1,22 @@
+/* A lighter blue-slate reading surface below the cinematic cover. */
+html[data-theme=dark]{background:#202c3e}
+html[data-theme=dark] body.edition-two{background:#202c3e;--research-surface:rgba(47,61,82,.88);--surface-line:rgba(142,162,194,.3);--rule:#52617a;--pale:#34435b}
+html[data-theme=dark] body.edition-two:before{background:linear-gradient(108deg,#25374b 0%,#253246 28%,#303346 52%,#343047 77%,#2c334b 100%)}
+html[data-theme=dark] body.edition-two:after{background:radial-gradient(ellipse at 20% 70%,#7296bf22,transparent 48%),radial-gradient(ellipse at 75% 38%,#a38db526,transparent 50%)}
+html[data-theme=dark] body.edition-two #connector-collection .connector-tile{background:linear-gradient(150deg,#3b4c64ce,#304058b3);border-color:#8196b54d;box-shadow:0 8px 24px -20px #101d3066}
+html[data-theme=dark] body.edition-two #real-experiments .agent-log{background:#28384de6;border-color:#5b6e895e}
+html[data-theme=dark] body.edition-two #real-experiments .agent-log-row.current{background:#405571;border-color:#a4b8e7}
+html[data-theme=dark] body.edition-two #real-experiments .platform-tabs,
+html[data-theme=dark] body.edition-two #demo-section .demo-versions,
+html[data-theme=dark] body.edition-two :is(.trial-mode-switch,.chart-mode,.sim-controls){background:#33435bcf;border-color:#768baa66}
+html[data-theme=dark] body.edition-two #real-experiments .connector-picker button:not(.selected),
+html[data-theme=dark] body.edition-two .results-chart-card :is(.method-key,.chart-metrics button:not([aria-pressed=true]),.chart-mode button:not([aria-pressed=true])),
+html[data-theme=dark] body.edition-two :is(.multiple-controls select,.multiple-controls button:not(.multiple-play),.sim-controls select,.sim-controls button,.log-read-toggle,.methods-disclosure){background:#3a4b64b3;border-color:#8094b466}
+html[data-theme=dark] body.edition-two #real-experiments .playback-speed select{background:#34465f;border-color:#8094b466}
+html[data-theme=dark] body.edition-two #real-experiments #task-menu button:hover{background:#3d506a}
+html[data-theme=dark] body.edition-two #demo-section .overview-chapters button{background:#34465f;border-color:#8094b466}
+html[data-theme=dark] body.edition-two :is(pre,.citation-box,.paper-card){background:#2d3d55;border-color:#6a7f9c66}
+html[data-theme=dark] body.edition-two .chart-tooltip{background:#354862;border-color:#7c92b2;border-top-color:var(--series-color)}
+html[data-theme=dark] body.edition-two :is(.research-table thead th,.research-table .table-group th){background:#374961}
+html[data-theme=dark] body.edition-two :is(.research-table .ours,.result-table .ours){background:#3a4e68}
+html[data-theme=dark] body.edition-two :is(.chart-legend,.column-chart,.difficulty-group li,.rokae-task-results,.benchmark-foot,.real-group-heading,.panel-heading,.footer-affiliation,.connector-picker,.table-notes){border-color:#7c91b140}

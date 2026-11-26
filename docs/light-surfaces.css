@@ -1,0 +1,25 @@
+/* Translucency belongs to the surface, never to text, figures or video. */
+body.edition-two{--research-surface:rgba(255,255,255,.76);--surface-line:rgba(177,193,218,.43)}
+body.edition-two #real-experiments .task-explorer,
+body.edition-two #experiments .simulation-explorer,
+body.edition-two :is(#benchmark,#research-overview,#method,#experimental-overview) .wrap,
+body.edition-two #results :is(.real-results-group,.simulation-panel,.connectors-panel),
+body.edition-two .results-chart-card,
+body.edition-two .comparison-panel,
+body.edition-two .result-table{
+ background:var(--research-surface);border-color:var(--surface-line);box-shadow:0 8px 28px #395b8004;
+}
+body.edition-two #real-experiments .task-view,
+body.edition-two #real-experiments #task-menu button.selected,
+body.edition-two .data-table-scroll,
+body.edition-two .research-table .table-group th{background:transparent}
+body.edition-two #connector-collection .connector-tile{background:rgba(255,255,255,.68)}
+body.edition-two #real-experiments .agent-log,
+body.edition-two #real-experiments .platform-tabs,
+body.edition-two #experiments .sim-controls{background:rgba(255,255,255,.7)}
+/* Let the continuous page atmosphere show through the carousel controls. */
+body.edition-two #task-showcase .carousel-controls{background:transparent}
+body.edition-two #real-experiments .connector-picker button:not(.selected),
+body.edition-two .results-chart-card .method-key,
+body.edition-two .results-chart-card .chart-metrics button:not([aria-pressed=true]),
+body.edition-two .results-chart-card .chart-mode button:not([aria-pressed=true]){background:rgba(255,255,255,.48)}

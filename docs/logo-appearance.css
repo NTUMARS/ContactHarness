@@ -1,0 +1,18 @@
+/* Supplied white-letter and black-letter originals. No recoloring filters. */
+html[data-theme] body.edition-two img[alt="MARS Lab"]{filter:none;background:transparent;border-radius:0;padding:0}
+html[data-theme] body.edition-two.home-page #overview .affiliation-logos{background:transparent;padding:0;border-radius:0}
+html[data-theme] body.edition-two.home-page #overview .affiliation-logos img{filter:none;background:transparent}
+html[data-theme] body.edition-two.home-page #overview .affiliation-logos{gap:30px;align-items:center;margin-top:18px}
+html[data-theme] body.edition-two.home-page #overview .affiliation-logos img{height:58px;max-height:58px;width:auto;max-width:none;object-fit:contain}
+@media(min-width:1900px){html[data-theme] body.edition-two.home-page #overview .affiliation-logos img{height:66px;max-height:66px}}
+@media(max-width:700px){html[data-theme] body.edition-two.home-page #overview .affiliation-logos{gap:22px}html[data-theme] body.edition-two.home-page #overview .affiliation-logos img{height:45px;max-height:45px}}
+html[data-theme] body.edition-two footer .mars-logo-white{display:none}
+html[data-theme] body.edition-two footer .mars-logo-black{display:block}
+html[data-theme=dark] body.edition-two footer .mars-logo-white{display:block}
+html[data-theme=dark] body.edition-two footer .mars-logo-black{display:none}
+
+.mars-home-link{display:inline-flex;align-items:center;flex-shrink:0;border-radius:4px}
+.mars-home-link:focus-visible{outline:2px solid #9eb9ed;outline-offset:6px}
+html[data-theme] .footer-affiliation .mars-home-link:has(.mars-logo-white){display:none}
+html[data-theme=dark] .footer-affiliation .mars-home-link:has(.mars-logo-white){display:inline-flex}
+html[data-theme=dark] .footer-affiliation .mars-home-link:has(.mars-logo-black){display:none}

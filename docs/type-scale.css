@@ -1,0 +1,43 @@
+/* One reading scale across the opening, experiments, method and results. */
+:root{--site-body:17px;--site-control:14px;--site-note:14px;--site-section-title:36px;--site-card-title:24px}
+body.edition-two{font-size:var(--site-body)}
+.edition-two .chapter-heading h2,.edition-two .section-heading h2,
+#real-experiments .section-heading h2,#experiments .section-heading h2,
+#experimental-overview .section-heading h2{font-size:var(--site-section-title);line-height:1.18;font-weight:600;letter-spacing:-.035em}
+#research-overview .paper-excerpt,#method .paper-excerpt,#experimental-overview .paper-excerpt{font-size:var(--site-body);line-height:1.7}
+#real-experiments .platform-tabs button,#real-experiments #task-menu button,
+#real-experiments .connector-picker button,#experiments #sim-task-menu button,
+#experiments #sim-method button,#experiments #sim-method-label,
+#real-experiments .playback-speed,#real-experiments select,#experiments select,
+#experiments .sim-controls button,#experiments .sim-controls time{font-size:var(--site-control);line-height:1.45}
+#real-experiments #task-menu button small,#real-experiments .task-caption p,
+#experiments .task-caption p{font-size:var(--site-note);line-height:1.5}
+#real-experiments .task-caption h3,#experiments .task-caption h3{font-size:20px!important;line-height:1.3}
+#real-experiments .connector-picker button,#experiments #sim-method button{padding:7px 11px}
+#real-experiments .agent-log-header h3{font-size:16px}
+#real-experiments .agent-log-header time{font-size:14px}
+#real-experiments .agent-log-row{font-size:13px;grid-template-columns:46px 55px minmax(0,1fr)}
+#real-experiments .agent-log-row[data-kind=shell] .agent-log-content,
+#real-experiments .agent-log-row[data-kind=output] .agent-log-content{font-size:13px}
+#results .panel-heading h3{font-size:22px}
+#results .panel-heading span,#results .result-number small,
+#results .connector-gallery figcaption,#results .sim-thumbs figcaption{font-size:var(--site-note);line-height:1.45}
+.chart-heading h3{font-size:var(--site-card-title)}
+.results-chart-card .method-key,.legend-group-title,.chart-context,.chart-footnote,
+.chart-axis-title,.column-label,.column-value,.chart-tooltip{font-size:var(--site-note)}
+.chart-ticks{font-size:12px}
+.chart-metrics button,.chart-grouping button,.chart-mode button{font-size:var(--site-control)}
+.legend-keys{gap:9px 10px}
+#real-experiments #connector-buttons{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+#real-experiments .connector-row{display:contents}
+#real-experiments .connector-row button{font-size:13px;padding:8px;min-width:0;white-space:normal;text-wrap:balance;display:inline-flex;align-items:center;justify-content:center;gap:5px}
+#real-experiments .connector-row .log-available{margin-left:0}
+@media(max-width:700px){#real-experiments #connector-buttons{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:480px){#real-experiments #connector-buttons{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.results-chart-card .method-key{padding:7px 10px}
+.research-table,.research-table th[scope=row]{font-size:15px}
+.research-table thead th,.research-table .table-unit,.research-table .table-group th,
+.research-table caption>span,.table-notes{font-size:14px}
+.research-table thead th[rowspan]{width:250px}
+@media(max-width:800px){:root{--site-section-title:30px;--site-body:16px;--site-card-title:23px}}
+@media(max-width:480px){:root{--site-section-title:28px;--site-card-title:22px}#real-experiments #task-menu button{font-size:14px}#real-experiments .agent-log-row{font-size:13px;grid-template-columns:43px 50px minmax(0,1fr)}.chart-metrics button{font-size:14px}}

@@ -1,0 +1,158 @@
+/* Shared typography and research chapters, following the compact homepage. */
+@font-face{font-family:Inter;src:url('assets/InterVariable.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;font-weight:400;letter-spacing:-.015em;font-optical-sizing:auto}
+button,input,select{font-family:inherit}
+.hero h1{font-family:inherit;font-weight:650;letter-spacing:-.045em}
+.hero h2{font-family:inherit;font-size:27px;line-height:1.3;font-weight:400;letter-spacing:-.035em}
+.author-list{font-size:17px;line-height:1.55;gap:12px;letter-spacing:-.025em;font-weight:450}
+.author-row{column-gap:20px;row-gap:8px}
+.author-list sup{font-size:14px;color:#365f97;font-weight:650;line-height:0;vertical-align:super}
+.author-notes{font-size:12px;line-height:1.65;letter-spacing:0}
+.chapter-heading h2,.section-heading h2{font-size:36px;line-height:1.14;font-weight:600;letter-spacing:-.04em}
+.nav nav a{font-weight:450;letter-spacing:-.015em}
+#real-experiments,#experiments{--ink:#f5f5f7;--muted:#aaaab2;--rule:#353539;--pale:#252528;background:#141416!important;color:#f5f5f7;border-bottom:0!important;padding:64px 32px}
+#real-experiments .section-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:32px}
+#real-experiments .section-heading h2,#experiments .section-heading h2{font-size:36px;color:#f5f5f7}
+#real-experiments .platform-tabs{display:flex;gap:4px;border:0;margin:0;padding:4px;border-radius:24px;background:#29292d;flex-shrink:0}
+#real-experiments .platform-tabs button{border:0;border-radius:20px;padding:7px 14px;color:#bdbdc5;font-size:12px;font-weight:500}
+#real-experiments .platform-tabs button.selected{background:#f5f5f7;color:#202124}
+#real-experiments .task-explorer{display:block}
+#real-experiments #task-menu{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;max-width:800px;margin:0 auto 24px;padding:0}
+#real-experiments #task-menu button{min-width:0;background:none;border:0;border-radius:10px;padding:10px 12px;font-size:13px;color:#bdbdc5;line-height:1.35;text-align:left}
+#real-experiments #task-menu button small{font-size:11px;line-height:1.3;color:#92929b;margin-top:3px}
+#real-experiments #task-menu button:hover{background:#222226;color:#fff}
+#real-experiments #task-menu button.selected{background:#2b2b30;color:#fff;font-weight:600}
+#real-experiments #task-menu button.selected small{color:#c7c7ce}
+:is(.home-page,.detail-page) #real-experiments .task-view{padding:0;background:none;border-radius:0;max-width:800px;margin:auto}
+#real-experiments .connector-picker{margin:0 0 22px;padding:0;border:0}
+#real-experiments .connector-picker button{border:1px solid #48484e;background:none;color:#cfcfd5;border-radius:16px;padding:6px 10px;font-size:11px;line-height:1.35}
+#real-experiments .connector-picker button.selected{background:#f5f5f7;color:#202124;border-color:#f5f5f7}
+#real-experiments .task-photo{max-width:600px;aspect-ratio:16/9;height:auto;border-radius:10px}
+#real-experiments .task-caption{max-width:600px;margin:16px auto 22px}
+#real-experiments .task-caption h3{font-size:18px!important;font-weight:600;letter-spacing:-.03em}
+#real-experiments .task-caption p{font-size:12px!important;color:#aaaab2}
+#real-experiments .playback-speed{font-size:12px;color:#bdbdc5}
+#real-experiments select,#experiments select{background:#29292e;border:1px solid #48484e;color:#f5f5f7;border-radius:7px;padding:5px 7px;font-size:12px;color-scheme:dark}
+#real-experiments .agent-log{background:#202023;border:0;border-radius:10px}
+#real-experiments .agent-log-header{border-bottom:1px solid #34343a;padding:13px 16px}
+#real-experiments .agent-log-header h3{font-size:14px;color:#f5f5f7;letter-spacing:0}
+#real-experiments .agent-log-header time{color:#bdbdc5;font-size:12px}
+#real-experiments .agent-log-row{font-size:12px;line-height:1.5;padding:8px 14px;color:#d5d5dd;grid-template-columns:44px 52px minmax(0,1fr)}
+#real-experiments .agent-log-row time{color:#9e9ea8}
+#real-experiments .agent-log-row.current{background:#2c3038;border-left-color:#8caedc}
+#real-experiments .agent-log-type{color:#c6c6ce}
+#real-experiments .agent-log-content{color:#d5d5dd}
+#real-experiments .agent-log-row[data-kind=shell] .agent-log-type{color:#d5b572}
+#real-experiments .agent-log-row[data-kind=output] .agent-log-type{color:#a8bad1}
+#real-experiments .agent-log-row[data-kind=agent] .agent-log-content{font-style:normal}
+#real-experiments .agent-log-row[data-kind=shell] .agent-log-content,#real-experiments .agent-log-row[data-kind=output] .agent-log-content{font-size:11px}
+#real-experiments #agent-log-feed{scrollbar-color:#62626b #202023}
+#experiments{padding-top:28px;padding-bottom:72px}
+#experiments .section-heading{margin-bottom:30px}
+#experiments .simulation-explorer{padding:0;background:none;border-radius:0;max-width:800px;margin:auto}
+#experiments #sim-task-menu{border-bottom:1px solid #3a3a40;margin-bottom:24px;gap:8px}
+#experiments #sim-task-menu button{background:none;color:#bdbdc5;font-size:13px;padding:12px 2px;border-radius:0;border-left:0}
+#experiments #sim-task-menu button.selected{color:#fff;border-bottom-color:#a6c0e3;font-weight:600}
+#experiments #sim-method-label{color:#a2a2ac;font-size:12px;font-weight:500;margin-bottom:12px}
+#experiments #sim-method{gap:7px}
+#experiments #sim-method button{font-size:11px;line-height:1.45;padding:7px 11px;color:#bdbdc5;border:1px solid #48484e;background:none}
+#experiments #sim-method button.selected{background:#f5f5f7;color:#202124;border-color:#f5f5f7}
+#experiments #sim-player{max-width:540px;margin:30px auto 0}
+#experiments #sim-stage{border:0;border-radius:0;box-shadow:none}
+#experiments .sim-controls{margin-top:12px;padding:8px;background:#242427;border-radius:8px;gap:8px;color:#cfcfd5}
+#experiments .sim-controls button{background:none;border:0;color:#f5f5f7;font-size:11px;padding:5px}
+#experiments .sim-controls input{accent-color:#9bb9df;min-width:40px}
+#experiments .sim-controls time{font-size:10px;white-space:nowrap;font-variant-numeric:tabular-nums}
+#experiments .task-caption{margin-top:18px}
+#experiments .task-caption h3{color:#f5f5f7;font-size:18px!important;font-weight:600}
+#experiments .task-caption p,#experiments #sim-unavailable{color:#aaaab2}
+#research-overview,#method,#experimental-overview{background:#fff!important;border-bottom:0!important;padding:68px 32px}
+#research-overview .wrap,#method .wrap,#experimental-overview .wrap{grid-template-columns:250px minmax(0,1fr);gap:32px 44px}
+#research-overview .paper-excerpt,#method .paper-excerpt,#experimental-overview .paper-excerpt{font-size:16px;line-height:1.75;letter-spacing:-.015em;color:#626268}
+#method .method-figure{background:none;border:0;border-radius:0;padding:0;box-shadow:none}
+#experimental-overview{padding-top:30px;padding-bottom:72px}
+#experimental-overview .section-heading h2{font-size:32px}
+#results{background:#fff!important;padding:68px 32px;border-bottom:0!important}
+#results .section-heading{margin-bottom:36px}
+#results .results-layout{gap:36px}
+#results .connectors-panel,#results .simulation-panel{background:none;border-radius:0;padding:0}
+#results .panel-heading{border-bottom:1px solid #d8d8df;padding:0 0 18px;min-height:64px!important}
+#results .panel-heading h3{font-size:20px;line-height:1.3;font-weight:600;letter-spacing:-.03em}
+#results .panel-heading span{font-size:11px;color:#777781}
+#results .result-number{font-size:68px;letter-spacing:-.055em;font-weight:500;height:124px;margin:14px 0 20px;padding:0}
+#results .result-number>span{font-size:30px}
+#results .result-number small{font-size:12px;letter-spacing:0;color:#6e6e76}
+#results .connector-gallery figcaption,#results .sim-thumbs figcaption{font-size:10px;line-height:1.45;font-weight:400;color:#5f5f68}
+#results .comparison-panel{margin-top:40px;padding:28px 0 0;border-top:1px solid #d8d8df;background:none;border-radius:0;grid-template-columns:250px minmax(0,1fr);gap:44px}
+#results .comparison-copy h3{font-size:25px;font-weight:600;letter-spacing:-.035em}
+#results .comparison-copy .chart-note{font-size:12px;line-height:1.7}
+#results .bar-row{font-size:12px;grid-template-columns:175px minmax(0,1fr) 45px;gap:12px;margin-bottom:16px}
+#results .bar-row b{font-size:12px;font-variant-numeric:tabular-nums}
+#results .bar-track{height:10px;background:#e5e5eb}
+#results .full-results{margin-top:64px;padding-top:0}
+#results .full-results>h3{font-size:30px;font-weight:600;letter-spacing:-.04em;margin-bottom:32px}
+.data-table-scroll{width:100%;overflow-x:auto;background:#fff;border-radius:10px;scrollbar-color:#bcbcc6 #f5f5f7;outline-offset:4px}
+.research-table{border-collapse:separate;border-spacing:0;table-layout:fixed;width:100%;min-width:960px;font-size:14px;line-height:1.5;color:#35353b;font-variant-numeric:tabular-nums;letter-spacing:0;text-align:right}
+.research-table caption{text-align:left;padding:24px 20px 20px;font-size:21px;font-weight:600;letter-spacing:-.03em;color:#222226}
+.research-table caption>span{display:block;font-size:12px;font-weight:400;letter-spacing:0;color:#73737d;margin-top:5px}
+.research-table th,.research-table td{padding:13px 7px;border-bottom:1px solid #eeeef2;white-space:nowrap;vertical-align:middle}
+.research-table th:first-child,.research-table td:first-child{text-align:left;padding-left:20px}
+.research-table th:last-child,.research-table td:last-child{padding-right:20px}
+.research-table thead{background:#f8f8fa;color:#62626d}
+.research-table thead th{font-weight:500;font-size:12px}
+.research-table thead th[rowspan]{width:240px}
+.research-table thead tr:nth-child(2) th{white-space:normal;overflow-wrap:anywhere}
+.research-table thead th[scope=colgroup]{text-align:center;padding:10px 7px;color:#555560}
+.research-table th[scope=row]{font-weight:450;font-size:14px;white-space:normal}
+.research-table .table-unit{display:block;font-size:12px;color:#777781;min-height:18px}
+.research-table .metric-start{border-left:1px solid #e4e4eb}
+.research-table .table-group th{padding:14px 20px 8px;background:#fff;color:#70707a;font-size:12px;font-weight:500;letter-spacing:.015em;border-bottom:0}
+.research-table tbody.our-results .data-row,.research-table tr.our-results{background:#edf3fa;color:#315f99}
+.research-table tbody.our-results th[scope=row],.research-table tr.our-results th[scope=row]{font-weight:600}
+.research-table .data-row:hover{background:#f5f5f8}
+.research-table tbody.our-results .data-row:hover,.research-table tr.our-results:hover{background:#e5eef9}
+.table-notes{font-size:13px;line-height:1.75;color:#74747e;margin:14px 0 38px;max-width:900px;letter-spacing:0}
+.table-notes:last-child{margin-bottom:0}
+/* Simulation is a separate light chapter. */
+#experiments{--ink:#222226;--muted:#6e6e76;--rule:#dcdce2;--pale:#f5f5f7;background:#fff!important;color:#222226;padding-top:64px;border-top:12px solid #fff!important}
+#experiments .section-heading h2{color:#222226}
+#experiments #sim-task-menu{border-bottom-color:#dcdce2}
+#experiments #sim-task-menu button{color:#6e6e76}
+#experiments #sim-task-menu button.selected{color:#222226;border-bottom-color:#537fbb}
+#experiments #sim-method-label{color:#6e6e76}
+#experiments #sim-method button{color:#55555e;border-color:#cccdd5;background:#fff}
+#experiments #sim-method button.selected{color:#fff;background:#29292e;border-color:#29292e}
+#experiments .sim-controls{background:#e9e9ee;color:#55555e}
+#experiments .sim-controls button{color:#29292e}
+#experiments select{background:#fff;color:#29292e;border-color:#c8c8d0;color-scheme:light}
+#experiments .task-caption h3{color:#222226}
+#experiments .task-caption p,#experiments #sim-unavailable{color:#6e6e76}
+@media(max-width:800px){
+ #real-experiments,#experiments,#research-overview,#method,#experimental-overview,#results{padding:48px 24px}
+ #experiments{padding-top:12px}
+ #real-experiments .section-heading{display:block}#real-experiments .platform-tabs{width:max-content;margin-top:22px}
+ #real-experiments .section-heading h2,#experiments .section-heading h2,.section-heading h2{font-size:30px}
+ #real-experiments #task-menu{grid-template-columns:repeat(4,minmax(0,1fr));overflow:visible}
+ #real-experiments #task-menu button{padding:10px 6px;font-size:12px}
+ #experiments #sim-task-menu{grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}
+ #research-overview .wrap,#method .wrap,#experimental-overview .wrap{display:block}
+ #research-overview .section-heading,#method .section-heading,#experimental-overview .section-heading{margin-bottom:22px}
+ #research-overview .paper-excerpt,#method .paper-excerpt,#experimental-overview .paper-excerpt{margin-bottom:30px;font-size:15px}
+ #results .results-layout{grid-template-columns:1fr;gap:40px}
+ #results .comparison-panel{grid-template-columns:1fr;gap:24px}
+ #results .comparison-copy h3{margin-bottom:12px}
+ #results .bar-row{grid-template-columns:170px minmax(0,1fr) 44px}
+ #results .full-results>h3{font-size:26px}
+ .author-list{font-size:16px}
+}
+@media(max-width:480px){
+ .hero h2{font-size:21px}.author-list{font-size:15px}.author-row{gap:8px 16px}
+ #real-experiments,#experiments,#research-overview,#method,#experimental-overview,#results{padding-left:20px;padding-right:20px}
+ #real-experiments #task-menu{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #real-experiments .agent-log-row{font-size:11px;padding:8px;grid-template-columns:38px 44px minmax(0,1fr)}
+ #real-experiments .agent-log-row[data-kind=shell] .agent-log-content,#real-experiments .agent-log-row[data-kind=output] .agent-log-content{font-size:10px}
+ #experiments #sim-method button{font-size:10px;padding:7px 9px}
+ #results .bar-row{grid-template-columns:145px minmax(0,1fr) 40px;gap:8px;font-size:11px}
+ #results .bar-row b{font-size:11px}
+ .research-table caption{font-size:19px}
+}
